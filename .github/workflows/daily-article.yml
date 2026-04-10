@@ -1,0 +1,41 @@
+name: 📝 Publicar Artículo Diario
+
+on:
+  schedule:
+    # Todos los días a las 8 PM hora Colombia (UTC-5 = 01:00 UTC)
+    - cron: '0 1 * * *'
+
+  # Permite ejecutar manualmente desde GitHub
+  workflow_dispatch:
+
+jobs:
+  generate-and-publish:
+    name: Generar y Publicar Artículo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Instalar dependencias
+        run: pip install anthropic
+
+      - name: ✍️ Generar artículo del día
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_article.py
+
+      - name: 📤 Publicar cambios en GitHub
+        run: |
+          git config user.name "GenioAI Bot"
+          git config user.email "bot@genioai.com"
+          git add .
+          git commit -m "📝 Artículo del día: $(date +'%Y-%m-%d')"
+          git push

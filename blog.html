@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Inteligencia Artificial en Español | GenioAI</title>
+  <meta name="description" content="Todos los tutoriales, guías y artículos de inteligencia artificial en español. Midjourney, ChatGPT, herramientas IA gratis y más." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><div class="logo-icon">🧠</div><span>GenioAI</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="herramientas.html">Herramientas</a></li>
+    <li><a href="about.html">Nosotros</a></li>
+    <li><a href="blog.html" class="nav-cta">Empezar →</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">📰 Todo el Contenido</div>
+  <h1>Blog de <span style="background:linear-gradient(135deg,#7c3aed,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Inteligencia Artificial</span></h1>
+  <p>Tutoriales, guías y comparativas de las mejores herramientas IA — todo en español</p>
+</div>
+
+<section style="padding:40px 24px 80px;">
+  <div class="container">
+
+    <div class="ad-zone"><span>Publicidad</span></div>
+
+    <!-- Filtros de categoría -->
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px;">
+      <button onclick="filterCat('all')" id="btn-all" style="padding:8px 18px;background:linear-gradient(135deg,#7c3aed,#06b6d4);border:none;border-radius:50px;color:white;font-weight:700;font-size:0.82rem;cursor:pointer;font-family:inherit;">Todos</button>
+      <button onclick="filterCat('imagenes')" id="btn-imagenes" style="padding:8px 18px;background:transparent;border:1px solid var(--border);border-radius:50px;color:var(--text-muted);font-weight:600;font-size:0.82rem;cursor:pointer;font-family:inherit;transition:all 0.2s;">🖼️ Imágenes IA</button>
+      <button onclick="filterCat('chatgpt')" id="btn-chatgpt" style="padding:8px 18px;background:transparent;border:1px solid var(--border);border-radius:50px;color:var(--text-muted);font-weight:600;font-size:0.82rem;cursor:pointer;font-family:inherit;transition:all 0.2s;">💬 ChatGPT</button>
+      <button onclick="filterCat('midjourney')" id="btn-midjourney" style="padding:8px 18px;background:transparent;border:1px solid var(--border);border-radius:50px;color:var(--text-muted);font-weight:600;font-size:0.82rem;cursor:pointer;font-family:inherit;transition:all 0.2s;">🎨 Midjourney</button>
+      <button onclick="filterCat('dinero')" id="btn-dinero" style="padding:8px 18px;background:transparent;border:1px solid var(--border);border-radius:50px;color:var(--text-muted);font-weight:600;font-size:0.82rem;cursor:pointer;font-family:inherit;transition:all 0.2s;">💰 Ganar con IA</button>
+      <button onclick="filterCat('video')" id="btn-video" style="padding:8px 18px;background:transparent;border:1px solid var(--border);border-radius:50px;color:var(--text-muted);font-weight:600;font-size:0.82rem;cursor:pointer;font-family:inherit;transition:all 0.2s;">🎬 Video IA</button>
+    </div>
+
+    <div class="articles-grid" id="articlesGrid">
+
+      <a href="blog/mejores-herramientas-ia-imagenes-2025.html" class="article-card" data-cat="imagenes">
+        <div class="article-card-image bg-purple">🖼️</div>
+        <div class="article-card-body">
+          <span class="article-tag">🖼️ Imágenes IA</span>
+          <h3>Las 10 Mejores Herramientas de IA para Crear Imágenes en 2025</h3>
+          <p>Midjourney, DALL-E 3, Stable Diffusion y más. Comparativa completa con precios.</p>
+          <div class="card-footer"><span>⏱️ 8 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/midjourney-guia-completa-espanol.html" class="article-card" data-cat="midjourney imagenes">
+        <div class="article-card-image bg-blue">🎨</div>
+        <div class="article-card-body">
+          <span class="article-tag">🎨 Midjourney</span>
+          <h3>Midjourney en Español: Guía Completa desde Cero (2025)</h3>
+          <p>Todo lo que necesitas saber: cuenta, prompts, parámetros y trucos avanzados.</p>
+          <div class="card-footer"><span>⏱️ 10 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/como-usar-chatgpt-gratis-2025.html" class="article-card" data-cat="chatgpt">
+        <div class="article-card-image bg-teal">🤖</div>
+        <div class="article-card-body">
+          <span class="article-tag">💬 ChatGPT</span>
+          <h3>Cómo Usar ChatGPT Gratis en 2025: Guía para Principiantes</h3>
+          <p>Sin tarjeta de crédito. Cómo acceder, los mejores prompts y trucos.</p>
+          <div class="card-footer"><span>⏱️ 6 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/como-usar-chatgpt-gratis-2025.html" class="article-card" data-cat="dinero">
+        <div class="article-card-image bg-amber">💰</div>
+        <div class="article-card-body">
+          <span class="article-tag">💸 Ganar Dinero</span>
+          <h3>7 Formas de Ganar Dinero con IA en 2025 (Métodos Reales)</h3>
+          <p>Freelance, venta de imágenes, contenido automatizado y más estrategias probadas.</p>
+          <div class="card-footer"><span>⏱️ 7 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/midjourney-guia-completa-espanol.html" class="article-card" data-cat="video">
+        <div class="article-card-image bg-rose">🎬</div>
+        <div class="article-card-body">
+          <span class="article-tag">🎥 Video IA</span>
+          <h3>Mejores IA para Crear Videos en 2025: Sora, Runway, Kling y Más</h3>
+          <p>Generadores de video con IA que están cambiando la creación de contenido.</p>
+          <div class="card-footer"><span>⏱️ 9 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/mejores-herramientas-ia-imagenes-2025.html" class="article-card" data-cat="chatgpt">
+        <div class="article-card-image bg-green">📝</div>
+        <div class="article-card-body">
+          <span class="article-tag">✍️ Escritura IA</span>
+          <h3>Claude vs ChatGPT vs Gemini: ¿Cuál es Mejor en 2025?</h3>
+          <p>Comparativa honesta de los tres mejores modelos de lenguaje del mercado.</p>
+          <div class="card-footer"><span>⏱️ 8 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/midjourney-guia-completa-espanol.html" class="article-card" data-cat="imagenes midjourney">
+        <div class="article-card-image bg-purple">✨</div>
+        <div class="article-card-body">
+          <span class="article-tag">🖼️ Imágenes IA</span>
+          <h3>Los 100 Mejores Prompts para Midjourney en Español (Copiables)</h3>
+          <p>Plantillas listas para usar organizadas por estilo, tema y tipo de imagen.</p>
+          <div class="card-footer"><span>⏱️ 5 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/como-usar-chatgpt-gratis-2025.html" class="article-card" data-cat="dinero">
+        <div class="article-card-image bg-blue">🏪</div>
+        <div class="article-card-body">
+          <span class="article-tag">💸 Ganar Dinero</span>
+          <h3>Cómo Vender Imágenes Generadas con IA: Guía Legal y Práctica</h3>
+          <p>Plataformas, derechos de autor, precios y estrategias para monetizar tu arte IA.</p>
+          <div class="card-footer"><span>⏱️ 6 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+      <a href="blog/mejores-herramientas-ia-imagenes-2025.html" class="article-card" data-cat="chatgpt">
+        <div class="article-card-image bg-teal">🔊</div>
+        <div class="article-card-body">
+          <span class="article-tag">🎵 Audio IA</span>
+          <h3>Las Mejores IA para Crear Música en 2025: Suno, Udio y Más</h3>
+          <p>Genera canciones completas con letra y música en minutos usando IA.</p>
+          <div class="card-footer"><span>⏱️ 7 min</span><span class="read-more">Leer →</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="ad-zone" style="margin-top:40px;"><span>Publicidad</span></div>
+
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-box">
+      <div style="font-size:2.5rem;margin-bottom:16px;">🧠</div>
+      <h2>Recibe Tutoriales Nuevos Cada Semana</h2>
+      <p>Sin spam. Solo los mejores artículos de IA directamente en tu email.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="tu@email.com" required />
+        <button type="submit">Suscribirse</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🧠</div><span>GenioAI</span></a>
+      <p>El blog de inteligencia artificial en español.</p>
+    </div>
+    <div class="footer-col"><h4>Contenido</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="herramientas.html">Herramientas</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacidad</a></li><li><a href="terms.html">Términos</a></li><li><a href="contact.html">Contacto</a></li></ul></div>
+    <div class="footer-col"><h4>Nosotros</h4><ul><li><a href="about.html">Quiénes somos</a></li><li><a href="disclaimer.html">Aviso Legal</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 GenioAI. Todos los derechos reservados.</span>
+    <span>Hecho con ❤️ para la comunidad hispanohablante</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function filterCat(cat) {
+  const cards = document.querySelectorAll('.article-card[data-cat]');
+  const btns = document.querySelectorAll('[id^="btn-"]');
+  btns.forEach(b => { b.style.background='transparent'; b.style.color='var(--text-muted)'; b.style.border='1px solid var(--border)'; });
+  const active = document.getElementById('btn-'+cat);
+  if (active) { active.style.background='linear-gradient(135deg,#7c3aed,#06b6d4)'; active.style.color='white'; active.style.border='none'; }
+  cards.forEach(card => {
+    if (cat === 'all' || card.dataset.cat.includes(cat)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
