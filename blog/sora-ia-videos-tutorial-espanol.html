@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sora de OpenAI: Cómo Crear Videos con IA en 2025 | GenioAI</title>
+  <meta name="description" content="Todo sobre Sora, la IA de OpenAI que genera videos de alta calidad." />
+  <meta name="keywords" content="sora openai, sora tutorial español, como usar sora, videos con ia" />
+  <meta property="og:title" content="Sora de OpenAI: Cómo Crear Videos con IA en 2025" />
+  <meta property="og:description" content="Todo sobre Sora, la IA de OpenAI que genera videos de alta calidad." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  <style>
+    #readingProgress {
+      position: fixed; top: 0; left: 0;
+      height: 3px; background: linear-gradient(90deg,#7c3aed,#06b6d4);
+      z-index: 9999; width: 0; transition: width 0.1s;
+    }
+    .article-sidebar {
+      position: sticky; top: 90px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      font-size: 0.88rem;
+    }
+    .article-sidebar h4 { font-weight: 700; margin-bottom: 16px; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    .article-sidebar ul { display: flex; flex-direction: column; gap: 10px; }
+    .article-sidebar ul li a { color: var(--text-muted); transition: color 0.2s; }
+    .article-sidebar ul li a:hover { color: var(--primary-light); }
+    .article-layout { display: grid; grid-template-columns: 1fr 260px; gap: 40px; max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
+    @media (max-width: 900px) { .article-layout { grid-template-columns: 1fr; } .article-sidebar { display: none; } }
+  </style>
+</head>
+<body>
+<div id="readingProgress"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <div class="logo-icon">🧠</div>
+    <span>GenioAI</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../herramientas.html">Herramientas</a></li>
+    <li><a href="../about.html">Nosotros</a></li>
+    <li><a href="../blog.html" class="nav-cta">Empezar →</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="article-hero">
+  <span class="article-tag">🎬 Video IA</span>
+  <h1>Sora de OpenAI: Cómo Crear Videos con IA en 2025</h1>
+  <div class="article-meta">
+    <span>📅 12 de Abril 2026</span>
+    <span>⏱️ 8 min lectura</span>
+    <span>✍️ Equipo GenioAI</span>
+  </div>
+</div>
+
+<div style="max-width:800px;margin:0 auto;padding:0 24px;">
+  <div class="ad-zone"><span>Publicidad</span></div>
+</div>
+
+<div class="article-layout">
+  <article class="article-body">
+    <h2 id="introduccion">Sora de OpenAI: La Revolución de los Videos Generados con Inteligencia Artificial</h2>
+
+<p>Imagina escribir una frase como <em>"Un astronauta paseando a un golden retriever por la superficie de Marte al atardecer"</em> y que, en cuestión de minutos, tengas un video cinematográfico de alta calidad con exactamente esa escena. Eso es lo que Sora de OpenAI promete —y cumple— en 2025.</p>
+
+<p>Si has estado siguiendo el mundo de la inteligencia artificial, probablemente recuerdas el revuelo que causó Sora cuando OpenAI mostró sus primeras demos a principios de 2024. Los videos eran tan realistas que muchos pensaron que eran grabaciones reales. Pues bien, desde su lanzamiento público en diciembre de 2024, Sora ha evolucionado enormemente y se ha convertido en una de las herramientas más poderosas para crear videos con IA.</p>
+
+<p>En este artículo te voy a contar <strong>todo lo que necesitas saber sobre Sora</strong>: qué es exactamente, cómo funciona, cómo puedes empezar a usarlo hoy mismo, cuánto cuesta, y —quizás lo más importante— consejos prácticos para sacarle el máximo partido. Vamos a ello.</p>
+
+<h2 id="que-es-sora">¿Qué Es Sora y Por Qué Todo el Mundo Habla de Esta IA?</h2>
+
+<p>Sora es el <strong>modelo de generación de video mediante inteligencia artificial</strong> desarrollado por OpenAI, la misma empresa detrás de ChatGPT y DALL·E. Su nombre proviene de la palabra japonesa "空" (sora), que significa "cielo", y la metáfora es bastante acertada: el cielo es el límite en cuanto a lo que puedes crear con esta herramienta.</p>
+
+<p>A diferencia de herramientas anteriores que generaban clips cortos, borrosos y con movimientos extraños, Sora es capaz de producir videos de hasta <strong>20 segundos en resolución 1080p</strong> con una calidad que, francamente, asusta. Los personajes mantienen coherencia visual, la física de los objetos es creíble, y las transiciones de cámara parecen sacadas de una producción profesional.</p>
+
+<h3>¿Cómo funciona Sora técnicamente?</h3>
+
+<p>Sin entrar en tecnicismos excesivos, Sora utiliza una arquitectura llamada <strong>modelo de difusión con transformers</strong> (a veces referido como "diffusion transformer"). Básicamente, el modelo comienza con ruido visual —algo parecido a estática de televisión— y va "limpiando" ese ruido fotograma a fotograma hasta crear un video coherente que responde a tu descripción textual.</p>
+
+<p>Lo que hace especial a Sora frente a sus competidores es que entiende no solo cómo se ven las cosas, sino <strong>cómo se comportan en el mundo físico</strong>. Sabe que el agua salpica, que el pelo se mueve con el viento, que las sombras cambian con la posición del sol. Este entendimiento del mundo real es lo que le da esa calidad cinematográfica que tanto impresiona.</p>
+
+<h2 id="funcionalidades">Funcionalidades Principales de Sora en 2025</h2>
+
+<p>Sora no es simplemente un generador de texto a video. A lo largo de sus actualizaciones, OpenAI ha ido añadiendo capacidades que lo convierten en una suite creativa bastante completa. Estas son las funcionalidades principales disponibles actualmente:</p>
+
+<ul>
+<li><strong>Texto a video (Text-to-Video):</strong> La función estrella. Escribes un prompt descriptivo y Sora genera un video desde cero. Puedes especificar estilo visual, movimientos de cámara, iluminación y más.</li>
+<li><strong>Imagen a video (Image-to-Video):</strong> Subes una imagen estática y Sora la "anima", dándole vida con movimiento coherente. Ideal para ilustraciones, fotos de producto o concept art.</li>
+<li><strong>Video a video (Re-estilización):</strong> Tomas un video existente y le aplicas un nuevo estilo visual. Por ejemplo, convertir una grabación real en una animación estilo anime o en una escena con estética de película noir.</li>
+<li><strong>Extensión de video:</strong> ¿Tu clip se queda corto? Sora puede extender un video existente hacia adelante o hacia atrás, manteniendo la coherencia visual y narrativa.</li>
+<li><strong>Storyboard:</strong> Una función que permite planificar secuencias de varias escenas, definiendo qué ocurre en cada segmento temporal del video. Es como tener un guion visual interactivo.</li>
+<li><strong>Blend (Mezcla):</strong> Combina dos videos o imágenes diferentes en una transición fluida y creativa, algo tremendamente útil para contenido artístico y publicitario.</li>
+</ul>
+
+<h2 id="como-usar-sora">Cómo Usar Sora: Tutorial Paso a Paso en Español</h2>
+
+<p>Vamos a lo práctico. Si quieres empezar a crear videos con Sora hoy mismo, aquí tienes una guía detallada de todo el proceso.</p>
+
+<h3>Paso 1: Acceder a Sora</h3>
+
+<p>Sora está disponible a través de la plataforma de OpenAI. Para acceder necesitas:</p>
+
+<ol>
+<li>Ir a <strong>sora.com</strong> o acceder desde tu cuenta de ChatGPT.</li>
+<li>Tener una suscripción activa de <strong>ChatGPT Plus o ChatGPT Pro</strong> (más adelante te detallo los precios).</li>
+<li>Iniciar sesión con tu cuenta de OpenAI.</li>
+<li>Una vez dentro, verás la interfaz de Sora, que es limpia, intuitiva y completamente separada del chat convencional de ChatGPT.</li>
+</ol>
+
+<p>Es importante mencionar que, a fecha de 2025, <strong>Sora está disponible en la mayoría de países</strong>, aunque existen restricciones en algunas regiones de Europa por cuestiones regulatorias relacionadas con la normativa de IA de la Unión Europea. Si estás en España o Latinoamérica, en general deberías poder acceder sin problemas, aunque conviene verificar la disponibilidad en tu país específico.</p>
+
+<h3>Paso 2: Escribir un buen prompt</h3>
+
+<p>Aquí es donde ocurre la magia —o el desastre, si no sabes cómo hacerlo—. La calidad de tu video depende enormemente de la calidad de tu prompt. Sora responde a descripciones en lenguaje natural, y sí, <strong>puedes escribir tus prompts en español</strong>, aunque los resultados suelen ser ligeramente mejores en inglés debido a los datos de entrenamiento.</p>
+
+<p>Un ejemplo de prompt básico:</p>
+
+<p><em>"Una mujer caminando por una calle de Tokio iluminada con luces de neón durante la noche, estilo cinematográfico, cámara siguiéndola desde atrás."</em></p>
+
+<p>Un ejemplo de prompt avanzado:</p>
+
+<p><em>"Plano secuencia en 4K de un mercado callejero en Marrakech al mediodía. La cámara se mueve lentamente entre los puestos de especias coloridas. Se ven comerciantes interactuando con clientes. Iluminación natural con sol cenital. Estilo documental, profundidad de campo reducida. Paleta de colores cálida con tonos naranjas y dorados."</em></p>
+
+<p>¿Notas la diferencia? Cuanto más específico seas con los detalles de cámara, iluminación, estilo y acción, mejores resultados obtendrás.</p>
+
+<h3>Paso 3: Configurar los parámetros del video</h3>
+
+<p>Antes de generar, puedes ajustar varios parámetros:</p>
+
+<ul>
+<li><strong>Resolución:</strong> 480p, 720p o 1080p (la resolución máxima consume más créditos).</li>
+<li><strong>Duración:</strong> Desde 5 hasta 20 segundos por clip.</li>
+<li><strong>Relación de aspecto:</strong> 16:9 (horizontal), 9:16 (vertical, ideal para Reels/TikTok), 1:1 (cuadrado).</li>
+</ul>
+
+<h3>Paso 4: Generar y refinar</h3>
+
+<p>Una vez que lanzas la generación, Sora tarda entre <strong>1 y 5 minutos</strong> dependiendo de la duración y resolución seleccionadas. El sistema suele generar varias variaciones para que elijas la que más te guste.</p>
+
+<p>Si el resultado no es exactamente lo que esperabas, puedes <strong>iterar modificando el prompt</strong>, ajustando detalles o usando la función de storyboard para tener mayor control sobre la secuencia.</p>
+
+<div class="tip-box"><strong>💡 Tip:</strong><p>No te frustres si el primer resultado no es perfecto. Los mejores creadores de video con IA suelen generar entre 5 y 15 variaciones antes de quedarse con la versión final. La iteración es parte fundamental del proceso creativo con Sora.</p></div>
+
+<h2 id="precios">Precios de Sora en 2025: ¿Cuánto Cuesta Realmente?</h2>
+
+<p>Hablemos de dinero, que es lo que a todos nos interesa. Sora no es una herramienta gratuita (al menos no de forma ilimitada). Su acceso está vinculado a los planes de suscripción de ChatGPT:</p>
+
+<div class="tool-card"><div class="tool-card-icon">⭐</div><div class="tool-card-info"><h3>ChatGPT Plus</h3><p>Incluye acceso a Sora con un límite de hasta 50 videos en resolución 720p por mes (clips de hasta 5 segundos). Es la opción más accesible para probar la herramienta y crear contenido básico. Las generaciones en 1080p y clips más largos consumen más créditos del límite mensual.</p><span class="badge">$20/mes</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">🚀</div><div class="tool-card-info"><h3>ChatGPT Pro</h3><p>Acceso completo a Sora con límites significativamente mayores: hasta 500 videos en 1080p por mes, clips de hasta 20 segundos, generaciones simultáneas y acceso prioritario en momentos de alta demanda. Incluye también generaciones sin marca de agua y descargas en alta calidad.</p><span class="badge">$200/mes</span></div></div>
+
+<p>Para la mayoría de usuarios individuales, creadores de contenido y pequeños emprendedores, el plan <strong>ChatGPT Plus de $20/mes</strong> es más que suficiente para experimentar y crear contenido regular. El plan Pro está orientado a profesionales del video, agencias de marketing y equipos de producción que necesitan volumen y máxima calidad.</p>
+
+<p>Es importante señalar que los <strong>límites exactos de generación pueden variar</strong>, ya que OpenAI ajusta estos números periódicamente según la demanda y capacidad de sus servidores. Te recomiendo consultar la página oficial para verificar los límites vigentes en el momento de tu suscripción.</p>
+
+<h2 id="consejos-practicos">7 Consejos Prácticos para Obtener los Mejores Resultados con Sora</h2>
+
+<p>Después de meses experimentando con Sora y analizando lo que hacen los mejores creadores de la comunidad, estos son los consejos que realmente marcan la diferencia:</p>
+
+<h3>1. Piensa como un director de cine al escribir tus prompts</h3>
+
+<p>No te limites a describir "qué" quieres ver. Describe el <strong>cómo</strong>: el tipo de plano (primer plano, plano general, cenital), el movimiento de cámara (tracking shot, panorámica, steadicam), la iluminación (contraluz, luz difusa, golden hour) y el estilo visual (cinematográfico, documental, animación). Este vocabulario técnico es lo que separa un video mediocre de uno impresionante.</p>
+
+<div class="tip-box"><strong>💡 Tip:</strong><p>Crea una "biblioteca de prompts" personal. Cada vez que consigas un resultado excelente, guarda el prompt exacto que usaste. Con el tiempo tendrás una colección de fórmulas probadas que podrás adaptar para nuevos proyectos.</p></div>
+
+<h3>2. Usa referencias visuales con la función imagen-a-video</h3>
+
+<p>Si tienes una imagen de referencia —ya sea una foto, una captura de otro video o incluso una imagen generada con DALL·E o Midjourney—, úsala como punto de partida. Sora es mucho más preciso cuando tiene una <strong>referencia visual concreta</strong> además del texto.</p>
+
+<h3>3. Mantén las escenas simples al principio</h3>
+
+<p>Uno de los errores más comunes entre principiantes es intentar crear escenas demasiado complejas con múltiples personajes interactuando, cambios de escenario y acciones simultáneas. Sora todavía puede tener dificultades con <strong>interacciones complejas entre personas</strong>, especialmente con las manos y los dedos. Empieza con escenas sencillas y ve aumentando la complejidad gradualmente.</p>
+
+<h3>4. Aprovecha el formato vertical para redes sociales</h3>
+
+<p>Si creas contenido para TikTok, Instagram Reels o YouTube Shorts, genera directamente en <strong>formato 9:16</strong>. No intentes recortar un video horizontal después, porque perderás composición y calidad. Sora optimiza la composición según la relación de aspecto que elijas.</p>
+
+<h3>5. Combina Sora con otras herramientas para un flujo profesional</h3>
+
+<p>Sora genera video, pero un video terminado necesita más: música, efectos de sonido, narración, texto superpuesto, transiciones. Usa herramientas complementarias para completar la producción:</p>
+
+<div class="tool-card"><div class="tool-card-icon">🎵</div><div class="tool-card-info"><h3>Udio / Suno</h3><p>Generadores de música con IA perfectos para crear bandas sonoras originales que complementen tus videos de Sora, sin problemas de derechos de autor.</p><span class="badge">Desde GRATIS</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">✂️</div><div class="tool-card-info"><h3>CapCut</h3><p>Editor de video gratuito con funciones de IA integradas. Ideal para ensamblar clips de Sora, añadir subtítulos automáticos, transiciones y efectos profesionales.</p
+
+    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;margin-top:48px;text-align:center;">
+      <div style="font-size:2rem;margin-bottom:12px;">📺</div>
+      <h3 style="margin-bottom:8px;">¿Prefieres verlo en video?</h3>
+      <p style="color:var(--text-muted);margin-bottom:20px;font-size:0.9rem;">Encuentra tutoriales visuales en nuestro canal de YouTube.</p>
+      <a href="https://youtube.com/@canalblx" target="_blank" rel="noopener" class="btn-primary">Ver en YouTube →</a>
+    </div>
+  </article>
+
+  <aside>
+    <div class="article-sidebar">
+      <h4>📰 Artículos Recientes</h4>
+      <ul>
+        <li><a href="mejores-herramientas-ia-imagenes-2025.html">10 Mejores herramientas IA para imágenes</a></li>
+        <li><a href="midjourney-guia-completa-espanol.html">Midjourney: Guía completa</a></li>
+        <li><a href="como-usar-chatgpt-gratis-2025.html">ChatGPT gratis: Guía 2025</a></li>
+      </ul>
+    </div>
+    <div style="margin-top:20px;">
+      <div class="ad-zone" style="margin:0;"><span>Publicidad</span></div>
+    </div>
+  </aside>
+</div>
+
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-box">
+      <div style="font-size:2.5rem;margin-bottom:16px;">🧠</div>
+      <h2>Recibe Tutoriales Nuevos Cada Semana</h2>
+      <p>Sin spam. Solo los mejores artículos de IA directamente en tu email.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="tu@email.com" required />
+        <button type="submit">Suscribirse</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="../index.html" class="nav-logo"><div class="logo-icon">🧠</div><span>GenioAI</span></a>
+      <p>El blog de inteligencia artificial en español.</p>
+    </div>
+    <div class="footer-col"><h4>Contenido</h4><ul><li><a href="../blog.html">Blog</a></li><li><a href="../herramientas.html">Herramientas</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="../privacy.html">Privacidad</a></li><li><a href="../terms.html">Términos</a></li><li><a href="../contact.html">Contacto</a></li></ul></div>
+    <div class="footer-col"><h4>Nosotros</h4><ul><li><a href="../about.html">Quiénes somos</a></li><li><a href="../disclaimer.html">Aviso Legal</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 GenioAI. Todos los derechos reservados.</span>
+    <span>Hecho con ❤️ para la comunidad hispanohablante</span>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
