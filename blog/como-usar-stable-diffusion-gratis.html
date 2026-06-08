@@ -55,7 +55,7 @@
   <span class="article-tag">🖼️ Imágenes IA</span>
   <h1>Cómo Usar Stable Diffusion Gratis en 2025: Guía Completa</h1>
   <div class="article-meta">
-    <span>📅 7 de Junio 2026</span>
+    <span>📅 8 de Junio 2026</span>
     <span>⏱️ 7 min lectura</span>
     <span>✍️ Equipo GenioAI</span>
   </div>
@@ -69,134 +69,142 @@
   <article class="article-body">
     <h2 id="introduccion">Cómo Usar Stable Diffusion Gratis en 2025: La Guía Que Nadie Te Explicó Tan Claro</h2>
 
-<p>Seamos honestos: la inteligencia artificial generativa ha cambiado las reglas del juego. Mientras que herramientas como Midjourney o DALL-E 3 te cobran suscripciones mensuales que van desde los 10 hasta los 60 dólares, existe una alternativa de código abierto que puedes usar <strong>completamente gratis, sin límites de créditos y sin suscripciones</strong>. Se llama Stable Diffusion, y en esta guía te voy a enseñar exactamente cómo instalarla y usarla en 2025.</p>
+<p>Seamos sinceros: cada vez que buscas "generar imágenes con IA gratis", terminas en una página que te pide tarjeta de crédito al tercer intento. Midjourney cobra suscripción, DALL-E te da un puñado de créditos y la mayoría de herramientas "gratuitas" tienen letra pequeña. Pero hay una excepción real y poderosa: <strong>Stable Diffusion</strong>.</p>
 
-<p>No importa si nunca has tocado una terminal de comandos o si ya tienes experiencia con IA. Este tutorial de Stable Diffusion en español está pensado para que cualquier persona pueda generar imágenes impresionantes sin gastar un solo centavo. ¿Listo? Vamos a ello.</p>
+<p>Stable Diffusion es un modelo de generación de imágenes de código abierto. Eso significa que puedes descargarlo, instalarlo en tu ordenador y usarlo <strong>literalmente sin límites, sin suscripciones y sin créditos</strong>. ¿El truco? Necesitas saber cómo configurarlo. Y para eso estás aquí.</p>
 
-<h2 id="que-es-stable-diffusion">¿Qué Es Stable Diffusion y Por Qué Debería Importarte?</h2>
+<p>En esta guía completa en español te voy a explicar paso a paso cómo instalar Stable Diffusion gratis en 2025, qué opciones tienes si tu PC no es muy potente, qué interfaces usar y cómo escribir prompts que generen imágenes espectaculares. Vamos a ello.</p>
 
-<p>Stable Diffusion es un modelo de inteligencia artificial de código abierto que genera imágenes a partir de texto. Fue desarrollado originalmente por Stability AI y lanzado en agosto de 2022, pero desde entonces ha evolucionado enormemente. En 2025, las versiones más recientes incluyen <strong>Stable Diffusion XL (SDXL)</strong>, <strong>Stable Diffusion 3.5</strong> y modelos derivados de la comunidad como los populares modelos alojados en Civitai.</p>
+<h2 id="que-es-stable-diffusion">¿Qué Es Stable Diffusion y Por Qué Es Diferente?</h2>
 
-<p>Lo que hace especial a Stable Diffusion frente a sus competidores es una combinación de tres factores:</p>
+<p>Stable Diffusion es un modelo de difusión latente desarrollado originalmente por Stability AI en colaboración con investigadores de la Universidad de Múnich. A diferencia de Midjourney o DALL-E, su código y sus pesos (los archivos del modelo) están disponibles públicamente. Esto significa varias cosas muy importantes:</p>
 
 <ul>
-<li><strong>Es gratuito y de código abierto:</strong> puedes descargarlo, modificarlo e incluso usarlo para proyectos comerciales sin pagar licencias.</li>
-<li><strong>Se ejecuta en tu propio ordenador:</strong> tus datos, tus prompts y tus imágenes nunca salen de tu máquina. Privacidad total.</li>
-<li><strong>Es infinitamente personalizable:</strong> puedes entrenar tus propios modelos, instalar extensiones, usar LoRAs, ControlNet y decenas de herramientas que la comunidad ha creado.</li>
+<li><strong>Es completamente gratuito:</strong> no pagas licencia, no pagas por imagen generada, no necesitas suscripción.</li>
+<li><strong>Se ejecuta en tu propio hardware:</strong> las imágenes se generan en tu GPU, no en un servidor remoto.</li>
+<li><strong>No hay censura impuesta:</strong> tú decides qué generar (con la responsabilidad ética que eso implica).</li>
+<li><strong>Puedes personalizar todo:</strong> entrenar modelos propios, usar extensiones, modificar el pipeline completo.</li>
+<li><strong>La comunidad es enorme:</strong> hay miles de modelos, LoRAs y herramientas creadas por usuarios en plataformas como Civitai y Hugging Face.</li>
 </ul>
 
-<p>Mientras que Midjourney te cobra 10 USD/mes por su plan básico y DALL-E 3 funciona a través de créditos en ChatGPT Plus (20 USD/mes), Stable Diffusion es la opción para quienes quieren <strong>libertad total sin costes recurrentes</strong>.</p>
+<p>En 2025, las versiones más utilizadas son <strong>Stable Diffusion XL (SDXL)</strong>, <strong>SD 1.5</strong> (que sigue siendo popular por su ligereza y compatibilidad con miles de modelos comunitarios) y los nuevos modelos basados en la arquitectura <strong>Stable Diffusion 3.5</strong>, que ofrecen una calidad impresionante en la generación de texto dentro de imágenes y composiciones complejas.</p>
 
-<h2 id="requisitos">¿Qué Necesitas Para Usar Stable Diffusion Gratis?</h2>
+<h2 id="requisitos">¿Qué Necesitas Para Ejecutar Stable Diffusion en Tu PC?</h2>
 
-<h3>Opción A: Instalación Local (Tu Propio Ordenador)</h3>
-
-<p>Si quieres ejecutar Stable Diffusion en tu PC, estos son los requisitos mínimos y recomendados en 2025:</p>
+<h3>Requisitos Mínimos</h3>
 
 <ul>
-<li><strong>GPU (Tarjeta gráfica):</strong> NVIDIA con al menos 6 GB de VRAM. Lo ideal es una RTX 3060 (12 GB) o superior. Las tarjetas AMD funcionan, pero con soporte más limitado.</li>
-<li><strong>RAM:</strong> Mínimo 16 GB, recomendado 32 GB.</li>
-<li><strong>Almacenamiento:</strong> Al menos 20 GB libres en SSD para la instalación base. Con modelos adicionales, fácilmente necesitarás 50-100 GB.</li>
-<li><strong>Sistema operativo:</strong> Windows 10/11 o Linux. macOS funciona en chips Apple Silicon (M1/M2/M3/M4) con rendimiento decente.</li>
-<li><strong>Python 3.10.x:</strong> Necesario para la mayoría de interfaces.</li>
+<li><strong>GPU:</strong> NVIDIA con al menos 4 GB de VRAM (por ejemplo, GTX 1650 o superior). Las tarjetas AMD funcionan pero el soporte es más limitado.</li>
+<li><strong>RAM:</strong> 8 GB mínimo (16 GB recomendado).</li>
+<li><strong>Almacenamiento:</strong> Al menos 15-20 GB libres para la interfaz, modelos y archivos generados.</li>
+<li><strong>Sistema operativo:</strong> Windows 10/11 o Linux. En macOS funciona en chips Apple Silicon (M1/M2/M3/M4) con algunas limitaciones.</li>
 </ul>
 
-<div class="tip-box"><strong>💡 Tip:</strong><p>Si tienes una tarjeta gráfica NVIDIA con solo 4 GB de VRAM, no te desesperes. Puedes usar optimizaciones como <strong>--lowvram</strong> o <strong>--medvram</strong> en Automatic1111, o usar modelos cuantizados más ligeros. No será tan rápido, pero funcionará.</p></div>
-
-<h3>Opción B: Sin Instalación (En la Nube, Gratis)</h3>
-
-<p>¿No tienes un PC potente? No hay problema. Puedes usar Stable Diffusion gratis en la nube a través de plataformas como Google Colab o interfaces web gratuitas. Más adelante te explico cómo hacerlo paso a paso.</p>
-
-<h2 id="interfaces-populares">Las 3 Mejores Interfaces Para Usar Stable Diffusion en 2025</h2>
-
-<p>Stable Diffusion por sí solo es un modelo de IA. Para usarlo de forma cómoda necesitas una <strong>interfaz gráfica</strong> (GUI). Estas son las tres más populares y todas son completamente gratuitas:</p>
-
-<div class="tool-card"><div class="tool-card-icon">🎨</div><div class="tool-card-info"><h3>Automatic1111 (AUTOMATIC1111 Web UI)</h3><p>La interfaz más veterana y con mayor comunidad. Enorme cantidad de extensiones, compatible con prácticamente todos los modelos y técnicas. Ideal si quieres control total y no te importa una interfaz algo anticuada.</p><span class="badge">GRATIS</span></div></div>
-
-<div class="tool-card"><div class="tool-card-icon">🚀</div><div class="tool-card-info"><h3>ComfyUI</h3><p>Interfaz basada en nodos (similar a Blender o Unreal Engine). Más rápida que Automatic1111, consume menos VRAM y ofrece flujos de trabajo extremadamente flexibles. Es la favorita de usuarios avanzados en 2025. Curva de aprendizaje más pronunciada, pero vale la pena.</p><span class="badge">GRATIS</span></div></div>
-
-<div class="tool-card"><div class="tool-card-icon">✨</div><div class="tool-card-info"><h3>Fooocus</h3><p>Inspirada en la simplicidad de Midjourney. Escribe tu prompt, pulsa un botón y listo. Cero configuración. Perfecta para principiantes que quieren resultados inmediatos sin complicaciones. Viene preconfigurada con SDXL.</p><span class="badge">GRATIS</span></div></div>
-
-<p><strong>Mi recomendación para 2025:</strong> Si eres principiante total, empieza con Fooocus. Si quieres aprender de verdad y tener control, ve directo a ComfyUI. Automatic1111 sigue siendo excelente, pero ComfyUI lo ha superado en rendimiento y flexibilidad.</p>
-
-<h2 id="instalacion-local">Cómo Instalar Stable Diffusion en Tu Ordenador (Paso a Paso)</h2>
-
-<p>Voy a guiarte con la instalación de <strong>Fooocus</strong> en Windows porque es la más sencilla y la que menos errores da. Si prefieres otra interfaz, el proceso es similar.</p>
-
-<h3>Paso 1: Descarga e Instala Python</h3>
-
-<p>Ve a <strong>python.org</strong> y descarga Python 3.10.x (no la 3.12 ni la 3.13, que pueden dar problemas de compatibilidad). Durante la instalación, <strong>marca la casilla "Add Python to PATH"</strong>. Esto es crucial y olvidarlo es el error más común.</p>
-
-<h3>Paso 2: Instala Git</h3>
-
-<p>Descarga Git desde <strong>git-scm.com</strong> e instálalo con las opciones por defecto. Git es necesario para clonar los repositorios de las interfaces.</p>
-
-<h3>Paso 3: Descarga Fooocus</h3>
-
-<p>Abre una terminal (CMD o PowerShell) y escribe:</p>
-
-<p><code>git clone https://github.com/lllyasviel/Fooocus.git</code></p>
-
-<p>Luego entra en la carpeta:</p>
-
-<p><code>cd Fooocus</code></p>
-
-<h3>Paso 4: Ejecuta Fooocus</h3>
-
-<p>En Windows, simplemente ejecuta el archivo <strong>run.bat</strong>. La primera vez descargará automáticamente el modelo SDXL base (unos 6.5 GB), así que necesitarás una buena conexión a internet y paciencia.</p>
-
-<p>Una vez completada la descarga, se abrirá una ventana del navegador con la interfaz. Escribe tu prompt en inglés (los modelos están entrenados principalmente en inglés), pulsa "Generate" y en unos segundos tendrás tu primera imagen generada por IA.</p>
-
-<div class="tip-box"><strong>💡 Tip:</strong><p>Aunque Stable Diffusion entiende mejor los prompts en inglés, puedes escribir en español y obtener resultados aceptables. Sin embargo, para mejores resultados, usa inglés y sé específico. En lugar de "un gato bonito", escribe algo como <strong>"a fluffy orange cat sitting on a windowsill, golden hour lighting, photorealistic, 8k, shallow depth of field"</strong>.</p></div>
-
-<h3>¿Y si quiero instalar ComfyUI o Automatic1111?</h3>
-
-<p>El proceso es muy similar. Para <strong>ComfyUI</strong>, puedes descargar el paquete portátil desde su repositorio de GitHub (existe una versión para Windows que no requiere instalación de Python, viene todo integrado). Para <strong>Automatic1111</strong>, clonas su repositorio y ejecutas <strong>webui-user.bat</strong>.</p>
-
-<h2 id="usar-sin-instalar">Cómo Usar Stable Diffusion Gratis SIN Instalar Nada</h2>
-
-<p>Si tu ordenador no cumple los requisitos o simplemente no quieres complicarte con instalaciones, tienes varias opciones gratuitas en la nube:</p>
-
-<div class="tool-card"><div class="tool-card-icon">☁️</div><div class="tool-card-info"><h3>Google Colab</h3><p>Puedes ejecutar Stable Diffusion en los servidores de Google usando notebooks gratuitos. Busca "Stable Diffusion Colab" en GitHub y encontrarás notebooks actualizados. La versión gratuita de Colab ahora limita más el uso de GPU que antes, pero sigue siendo viable para sesiones cortas.</p><span class="badge">GRATIS (con limitaciones)</span></div></div>
-
-<div class="tool-card"><div class="tool-card-icon">🌐</div><div class="tool-card-info"><h3>Hugging Face Spaces</h3><p>Hugging Face aloja demos gratuitas de Stable Diffusion que puedes usar directamente desde el navegador. Busca "Stable Diffusion XL" o "Stable Diffusion 3.5" en los Spaces. Las colas pueden ser lentas en horas punta, pero es completamente gratis y sin registro obligatorio.</p><span class="badge">GRATIS</span></div></div>
-
-<div class="tool-card"><div class="tool-card-icon">🖼️</div><div class="tool-card-info"><h3>Civitai (Generador en línea)</h3><p>Civitai no es solo un repositorio de modelos. Desde 2024 ofrece un generador de imágenes integrado que permite usar cientos de modelos de la comunidad. Ofrece créditos gratuitos diarios para generar imágenes. No es ilimitado, pero es una forma excelente de probar modelos sin instalar nada.</p><span class="badge">GRATIS (créditos diarios limitados)</span></div></div>
-
-<div class="tool-card"><div class="tool-card-icon">⚡</div><div class="tool-card-info"><h3>ThinkDiffusion</h3><p>Ofrece Automatic1111 y ComfyUI en la nube con GPUs potentes. No es gratis permanentemente, pero tienen una prueba gratuita que te permite probar el servicio. Los planes empiezan desde unos 8 USD/mes aproximadamente.</p><span class="badge">Prueba GRATIS / Desde ~$8/mes</span></div></div>
-
-<h2 id="prompts-efectivos">Cómo Escribir Prompts Efectivos: El Arte Detrás de la Magia</h2>
-
-<p>La calidad de tus imágenes depende enormemente de cómo escribas tus prompts. Aquí te doy una estructura que funciona de maravilla:</p>
-
-<h3>La Fórmula del Prompt Perfecto</h3>
-
-<p><strong>[Sujeto principal] + [Detalles del sujeto] + [Entorno/Fondo] + [Iluminación] + [Estilo artístico] + [Calidad técnica]</strong></p>
-
-<p>Ejemplo práctico:</p>
-
-<p><strong>Prompt:</strong> "A medieval knight standing in a misty forest, wearing ornate silver armor with blue engravings, morning fog, volumetric lighting, rays of light through trees, fantasy art style, highly detailed, 4k, sharp focus"</p>
-
-<p><strong>Negative prompt:</strong> "blurry, low quality, deformed hands, extra fingers, watermark, text, ugly, distorted face"</p>
-
-<h3>Ejemplos de Prompts por Categoría</h3>
+<h3>Requisitos Recomendados Para una Experiencia Fluida</h3>
 
 <ul>
-<li><strong>Retrato fotorrealista:</strong> "Portrait of a 30-year-old woman with freckles, natural makeup, soft studio lighting, Canon EOS R5, 85mm lens, f/1.4, bokeh background, photorealistic"</li>
-<li><strong>Paisaje fantástico:</strong> "Floating islands in a purple sky, waterfalls cascading into clouds, bioluminescent plants, Studio Ghibli style, matte painting, breathtaking, epic composition"</li>
-<li><strong>Diseño de producto:</strong> "Minimalist smartwatch on a marble surface, product photography, soft shadows, clean white background, commercial photo, ultra sharp"</li>
+<li><strong>GPU:</strong> NVIDIA RTX 3060 (12 GB VRAM) o superior. Con 8 GB de VRAM puedes generar imágenes de 512x512 cómodamente y con SDXL a 1024x1024 usando optimizaciones.</li>
+<li><strong>RAM:</strong> 16-32 GB.</li>
+<li><strong>SSD:</strong> Los modelos pesan entre 2 y 7 GB cada uno. Un SSD hace que la carga sea mucho más rápida.</li>
 </ul>
 
-<div class="tip-box"><strong>💡 Tip:</strong><p>El <strong>negative prompt</strong> es tan importante como el prompt principal. Siempre incluye términos como "blurry, low quality, deformed, extra fingers, watermark" para evitar los defectos más comunes. En Fooocus, muchos negativos ya vienen preconfigurados, lo que facilita mucho las cosas.</p></div>
+<div class="tip-box"><strong>💡 Tip:</strong><p>Si tienes una GPU con solo 4-6 GB de VRAM, no te preocupes. Puedes usar la opción <strong>--medvram</strong> o <strong>--lowvram</strong> en Automatic1111, o utilizar Forge UI que está optimizada específicamente para GPUs con poca memoria. La diferencia es que las imágenes tardarán un poco más en generarse, pero el resultado es igual de bueno.</p></div>
 
-<h2 id="modelos-y-loras">Modelos, LoRAs y Checkpoints: Personaliza Tus Resultados</h2>
+<h2 id="opciones-instalacion">Las 3 Mejores Formas de Usar Stable Diffusion Gratis en 2025</h2>
 
-<p>Una de las mayores ventajas de Stable Diffusion es su ecosistema de modelos. Piensa en el modelo base como el "cerebro" de la IA, y en los LoRAs como "especializaciones" que puedes añadir encima.</p>
+<p>Dependiendo de tu situación técnica, tienes diferentes caminos. Te los presento de más fácil a más avanzado:</p>
 
-<h3>Modelos Base Recomendados en 2025</h3>
+<h3>Opción 1: En la Nube (Sin Instalar Nada)</h3>
 
-<ul>
-<li>
+<p>Si tu PC no tiene una GPU potente o simplemente no quieres complicarte con instalaciones, puedes usar Stable Diffusion directamente desde el navegador a través de servicios en la nube. La opción reina aquí es <strong>Google Colab</strong>, aunque en 2025 las cuentas gratuitas tienen restricciones más estrictas para ejecutar interfaces de Stable Diffusion. Aun así, existen alternativas.</p>
+
+<div class="tool-card"><div class="tool-card-icon">☁️</div><div class="tool-card-info"><h3>Google Colab + Stable Diffusion</h3><p>Ejecuta notebooks preconfigurados con la interfaz de Automatic1111 o Forge directamente en GPUs T4 de Google. La versión gratuita permite sesiones limitadas; Colab Pro ofrece GPUs más potentes y sesiones más largas.</p><span class="badge">GRATIS (limitado) / $11.99/mes Colab Pro</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">🖥️</div><div class="tool-card-info"><h3>ThinkDiffusion</h3><p>Servicio que te da una instancia preinstalada de Automatic1111, ComfyUI o Forge en la nube. Solo abres el navegador y empiezas a generar. Pagas por minutos de uso.</p><span class="badge">Desde $0.50/hora aprox.</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">🤗</div><div class="tool-card-info"><h3>Hugging Face Spaces</h3><p>Varios modelos de Stable Diffusion están disponibles como demos gratuitas en Hugging Face. No tienes control total, pero puedes generar imágenes rápidamente sin registro.</p><span class="badge">GRATIS</span></div></div>
+
+<h3>Opción 2: Instalación Local con Interfaz Gráfica (Recomendada)</h3>
+
+<p>Esta es la opción más popular y la que te da control total. Instalas una interfaz web en tu PC que se conecta al modelo de Stable Diffusion y te permite generar imágenes desde el navegador, pero todo se ejecuta localmente.</p>
+
+<div class="tool-card"><div class="tool-card-icon">🎨</div><div class="tool-card-info"><h3>Stable Diffusion WebUI Forge</h3><p>Fork optimizado de Automatic1111 creado por lllyasviel. Consume menos VRAM, es más rápido y soporta los últimos modelos incluyendo SDXL y SD3.5. Es la interfaz más recomendada en 2025 para la mayoría de usuarios.</p><span class="badge">GRATIS</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">🖌️</div><div class="tool-card-info"><h3>Automatic1111 WebUI</h3><p>La interfaz clásica y más conocida. Enorme ecosistema de extensiones. Sigue siendo muy usada, aunque Forge la supera en rendimiento. Perfecta si encuentras tutoriales basados en ella.</p><span class="badge">GRATIS</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">🔗</div><div class="tool-card-info"><h3>ComfyUI</h3><p>Interfaz basada en nodos, más técnica pero extremadamente potente y flexible. Ideal para usuarios avanzados que quieren crear workflows complejos de generación.</p><span class="badge">GRATIS</span></div></div>
+
+<h3>Opción 3: Aplicaciones de Escritorio Todo-en-Uno</h3>
+
+<p>Si la línea de comandos te da alergia, hay aplicaciones que empaquetan todo en un instalador sencillo:</p>
+
+<div class="tool-card"><div class="tool-card-icon">💻</div><div class="tool-card-info"><h3>Fooocus</h3><p>Inspirada en la simplicidad de Midjourney pero ejecutándose localmente. Instalación mínima, interfaz limpia, resultados excelentes con SDXL sin necesidad de ajustar parámetros.</p><span class="badge">GRATIS</span></div></div>
+
+<div class="tool-card"><div class="tool-card-icon">🧰</div><div class="tool-card-info"><h3>StabilityMatrix</h3><p>Un gestor que te permite instalar y administrar Automatic1111, Forge, ComfyUI y Fooocus desde una sola aplicación con interfaz gráfica. Descarga modelos, gestiona paquetes y actualiza todo con un clic.</p><span class="badge">GRATIS</span></div></div>
+
+<h2 id="tutorial-instalacion">Tutorial: Cómo Instalar Stable Diffusion Paso a Paso (Windows)</h2>
+
+<p>Vamos con la instalación práctica usando <strong>StabilityMatrix</strong>, que es el método más sencillo y a prueba de errores en 2025. Si prefieres hacerlo manualmente con Forge o Automatic1111, el proceso es similar pero requiere instalar Python y Git por separado.</p>
+
+<h3>Paso 1: Descargar StabilityMatrix</h3>
+
+<ol>
+<li>Ve a <strong>github.com/LykosAI/StabilityMatrix</strong> y descarga la última versión para Windows.</li>
+<li>Extrae el archivo ZIP en una carpeta con ruta sencilla, por ejemplo: <strong>C:\StabilityMatrix</strong>. Evita rutas con espacios o caracteres especiales.</li>
+<li>Ejecuta el archivo <strong>StabilityMatrix.exe</strong>.</li>
+</ol>
+
+<h3>Paso 2: Instalar una Interfaz</h3>
+
+<ol>
+<li>Al abrir StabilityMatrix por primera vez, te pedirá que elijas una carpeta de datos. Selecciona una ubicación con bastante espacio libre (mínimo 20 GB).</li>
+<li>Ve a la sección <strong>"Packages"</strong> y elige la interfaz que quieras instalar. Te recomiendo <strong>Forge</strong> o <strong>Fooocus</strong> si es tu primera vez.</li>
+<li>Haz clic en <strong>"Install"</strong>. StabilityMatrix descargará automáticamente Python, Git, las dependencias y la interfaz. Esto puede tardar entre 10 y 30 minutos dependiendo de tu conexión.</li>
+</ol>
+
+<h3>Paso 3: Descargar un Modelo</h3>
+
+<p>La interfaz viene sin modelos por defecto (excepto Fooocus, que descarga SDXL automáticamente). Necesitas descargar al menos un modelo (archivo .safetensors) para generar imágenes.</p>
+
+<ol>
+<li>Dentro de StabilityMatrix, ve a <strong>"Model Browser"</strong>. Puedes buscar directamente modelos de Civitai y Hugging Face.</li>
+<li>Para empezar, busca modelos populares como: <strong>Juggernaut XL</strong>, <strong>RealVisXL</strong>, <strong>DreamShaper XL</strong> o <strong>Pony Diffusion V6 XL</strong>.</li>
+<li>Descarga el modelo y se colocará automáticamente en la carpeta correcta.</li>
+</ol>
+
+<h3>Paso 4: Generar Tu Primera Imagen</h3>
+
+<ol>
+<li>Vuelve a "Packages", selecciona tu interfaz instalada y haz clic en <strong>"Launch"</strong>.</li>
+<li>Se abrirá una ventana de terminal y después tu navegador con la interfaz web.</li>
+<li>Selecciona el modelo que descargaste en el menú desplegable superior.</li>
+<li>Escribe un prompt (descripción de la imagen que quieres) en el campo de texto.</li>
+<li>Haz clic en <strong>"Generate"</strong>.</li>
+</ol>
+
+<p>En unos segundos (dependiendo de tu GPU), tendrás tu primera imagen generada con IA de forma completamente local y gratuita.</p>
+
+<div class="tip-box"><strong>💡 Tip:</strong><p>Si usas una GPU NVIDIA con 6 GB de VRAM o menos, al lanzar Forge o Automatic1111 añade el argumento <strong>--medvram-sdxl</strong> en los ajustes de lanzamiento dentro de StabilityMatrix. Esto optimiza el uso de memoria para modelos SDXL sin perder calidad.</p></div>
+
+<h2 id="escribir-prompts">Cómo Escribir Prompts Efectivos en Español (y en Inglés)</h2>
+
+<p>Aquí es donde la magia ocurre (o no). Un buen prompt marca la diferencia entre una imagen mediocre y una obra de arte. Aunque Stable Diffusion está entrenado principalmente con textos en inglés, entender la estructura de un prompt te ayudará enormemente.</p>
+
+<h3>Estructura Básica de un Prompt</h3>
+
+<p>Un prompt efectivo suele seguir este orden:</p>
+
+<ol>
+<li><strong>Sujeto principal:</strong> qué quieres ver (una mujer, un paisaje, un robot, etc.)</li>
+<li><strong>Detalles del sujeto:</strong> vestimenta, expresión, pose, colores.</li>
+<li><strong>Entorno y fondo:</strong> dónde está, qué hay alrededor.</li>
+<li><strong>Estilo artístico:</strong> fotografía, pintura al óleo, anime, concept art, etc.</li>
+<li><strong>Calidad y técnica:</strong> etiquetas como "highly detailed", "8k", "cinematic lighting".</li>
+</ol>
+
+<h3>Ejemplo Práctico</h3>
+
+<p><strong>Prompt:</strong> <em>"A
 
     <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;margin-top:48px;text-align:center;">
       <div style="font-size:2rem;margin-bottom:12px;">📺</div>
